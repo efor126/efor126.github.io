@@ -15,12 +15,13 @@
             align-items: center;
             height: 100vh;
             text-align: center;
+            flex-direction: column;
         }
         header {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         header h1 {
-            font-size: 80px;
+            font-size: 90px;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -49,9 +50,10 @@
             color: #34A853; /* Google绿 */
         }
         .container {
+            width: 100%;
             display: flex;
-            justify-content: space-around;
-            width: 60%;
+            justify-content: space-between;
+            padding: 0 20px;
         }
         .left, .right {
             background-color: #f5f5f5;
@@ -59,6 +61,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 45%;
+            text-align: center;
         }
         .left a, .right a {
             display: block;
@@ -69,7 +72,6 @@
             padding: 10px;
             background-color: #ecf0f1;
             border-radius: 5px;
-            text-align: center;
             transition: background-color 0.3s;
         }
         .left a:hover, .right a:hover {
@@ -97,7 +99,6 @@
             <span class="I2">I</span>
             <span class="E">E</span>
         </h1>
-        <h2>Welcome</h2>
     </header>
 
     <div class="container">
@@ -117,5 +118,3 @@
 
 </body>
 </html>
-
-     
