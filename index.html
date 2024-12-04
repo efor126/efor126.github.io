@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI智能与wiki编辑系统</title>
+    <title>AI智能与Wiki编辑系统</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* 白色背景 */
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* 让元素紧贴顶部 */
-            height: 100vh;
+            align-items: flex-start;
+            min-height: 100vh;
             text-align: center;
             flex-direction: column;
-            padding-top: 10px; /* 稍微上移 */
+            padding-top: 40px; /* 整体上移 */
         }
         header {
             width: 100%;
             display: flex;
-            justify-content: center; /* 水平居中 */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 20px;
+        }
+        .school-name {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
         header h1 {
             font-size: 90px;
             margin: 0;
             display: flex;
-            justify-content: center; /* 子元素居中 */
-            gap: 10px; /* 字母之间的间距 */
+            justify-content: center;
+            gap: 10px;
         }
         header h1 span {
             font-size: 90px;
         }
-        header h1 span.A {
-            color: #4285F4; /* Google蓝 */
-        }
-        header h1 span.I {
-            color: #34A853; /* Google绿 */
-        }
-        header h1 span.W {
-            color: #FBBC05; /* Google黄 */
-        }
-        header h1 span.I2 {
-            color: #EA4335; /* Google红 */
-        }
-        header h1 span.K {
-            color: #4285F4; /* Google蓝 */
-        }
-        header h1 span.I3 {
-            color: #34A853; /* Google绿 */
-        }
+        header h1 span.A { color: #4285F4; }
+        header h1 span.I { color: #34A853; }
+        header h1 span.W { color: #FBBC05; }
+        header h1 span.I2 { color: #EA4335; }
+        header h1 span.K { color: #4285F4; }
+        header h1 span.I3 { color: #34A853; }
+
         .container {
             width: 100%;
             display: flex;
@@ -75,49 +73,64 @@
             padding: 10px;
             background-color: #ecf0f1;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.1s;
         }
         .left a:hover, .right a:hover {
             background-color: #bdc3c7;
         }
+        .left a:active, .right a:active {
+            background-color: #95a5a6;
+            transform: scale(0.98);
+        }
+
         footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
             text-align: center;
             padding: 10px;
-            background-color: #ffffff; /* 白色背景 */
+            background-color: #ffffff;
             color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left, .right {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>
+        <div class="school-name">东阿县第一中学</div>
+        <h1 aria-label="AI WIKI Logo">
             <span class="A">A</span>
             <span class="I">I</span>
             <span class="W">W</span>
             <span class="I2">I</span>
             <span class="K">K</span>
-            <span class="I3">I</span> 
+            <span class="I3">I</span>
         </h1>
     </header>
 
     <div class="container">
         <div class="left">
             <h3>WIKI编辑</h3>
-            <a href="http://v.151717.xyz">ENTER</a>
+            <a href="http://v.151717.xyz" title="进入WIKI编辑系统" target="_blank">ENTER</a>
         </div>
         <div class="right">
             <h3>AI智能</h3>
-            <a href="http://w.151717.xyz">ENTER</a>
+            <a href="http://w.151717.xyz" title="进入AI智能系统" target="_blank">ENTER</a>
         </div>
     </div>
 
     <footer>
-        <p>© 2024 whj | AIWIKI</p>
+        <p>&copy; 2024 whj | AIWIKI</p>
     </footer>
-
 </body>
 </html>
