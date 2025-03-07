@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ai</title>
+    <title>AI 入口</title>
     <style>
         * {
             margin: 0;
@@ -15,25 +15,44 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #e3f2fd, #fce4ec);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 20px; /* 设置按钮间距 */
         }
         a {
             font-size: 1.5em;
             text-decoration: none;
-            padding: 10px 20px;
-            background-color: #007bff;
+            padding: 12px 24px;
+            background: #007bff;
             color: white;
-            border-radius: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
         }
         a:hover {
-            background-color: #0056b3;
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            a {
+                text-align: center;
+                width: 80%;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="http://w.151717.xyz">AI模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="http://v.151717.xyz">RAG模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    
+    <div class="container">
+        <a href="http://w.151717.xyz">AI模型</a>
+        <a href="http://v.151717.xyz">RAG模型</a>
+    </div>
 </body>
 </html>
