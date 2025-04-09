@@ -1,109 +1,131 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>x.151717.xyz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>AI Network Portal</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
+
         body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: linear-gradient(to right, #e3f2fd, #fce4ec);
-            font-family: "Product Sans", Arial, sans-serif;
-            text-align: center;
-            color: #333;
+            color: #ffffff;
+            padding: 20px;
         }
-        .domain-text {
-            font-size: 3em;
-            font-weight: bold;
-            display: flex;
-            gap: 8px;
-        }
-        .domain-text span {
-            display: inline-block;
-        }
-        /* Google 颜色 */
-        .blue { color: #4285F4; }
-        .red { color: #DB4437; }
-        .yellow { color: #F4B400; }
-        .green { color: #0F9D58; }
 
-        p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            max-width: 600px;
-            line-height: 1.6;
-        }
         .container {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
-        a {
-            font-size: 1.5em;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #e0e0e0;
+        }
+
+        .subtext {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .link-box {
+            margin: 20px 0;
+        }
+
+        .link {
+            display: block;
+            padding: 15px 25px;
+            background: #ffffff;
+            color: #1e3c72;
             text-decoration: none;
-            padding: 12px 24px;
-            background: #007bff;
-            color: white;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
         }
-        a:hover {
-            background: #0056b3;
-            transform: translateY(-2px);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+        .link:hover {
+            background: #e0e0e0;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
+
+        .description {
+            font-size: 0.9em;
+            color: #d0d0d0;
+            margin-top: 5px;
+        }
+
         .footer {
             margin-top: 30px;
-            font-size: 0.9em;
-            color: #666;
+            font-size: 0.8em;
+            color: #b0b0b0;
         }
-        @media (max-width: 600px) {
+
+        @media (max-width: 480px) {
             .container {
-                flex-direction: row;
-                gap: 10px;
+                padding: 20px;
             }
-            a {
-                text-align: center;
-                width: auto;
-                padding: 10px 20px;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle, .subtext {
+                font-size: 1em;
+            }
+
+            .link {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+
+            .footer {
+                font-size: 0.7em;
             }
         }
     </style>
 </head>
 <body>
-    <div class="domain-text">
-        <span class="blue">X</span>
-        <span class="red">.</span>
-        <span class="yellow">1</span>
-        <span class="blue">5</span>
-        <span class="green">1</span>
-        <span class="red">7</span>
-        <span class="yellow">1</span>
-        <span class="blue">7</span>
-        <span class="green">.</span>
-        <span class="red">X</span>
-        <span class="yellow">Y</span>
-        <span class="blue">Z</span>
-    </div>
-    <p>探索 AI 与 RAG 模型的无限可能</p>
-    <p>用你的想象力去提问，剩下的事情交给AI</p>
     <div class="container">
-        <a href="http://w.151717.xyz">AI模型</a>
-        <a href="http://v.151717.xyz">RAG模型</a>
+        <h1>人工智能大语言模型</h1>
+        <p class="subtitle">探索 AI 与 RAG 模型的无限可能</p>
+        <p class="subtext">用你的想象力去提问，剩下的事情交给AI</p>
+        
+        <div class="link-box">
+            <a href="https://x.151717.xyz" class="link">AI模型</a>
+          </div>
+        
+        <div class="link-box">
+            <a href="http://172.22.34.117:3000" class="link">RAG模型</a>
+          </div>
+
+        <div class="footer">
+            © 2025 x.151717.xyz. All rights reserved.
+        </div>
     </div>
-    <div class="footer">© 2025 X.151717.XYZ. All Rights Reserved.</div>
 </body>
 </html>
